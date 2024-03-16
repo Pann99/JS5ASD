@@ -27,9 +27,11 @@ public class SumMain {
         for (int i = 0; i < elm; i++) {
             System.out.println("Perusahaan ke-" + (i + 1));
             System.out.println("Algoritma Brute Force");
-            System.out.println("Total keuntungan perusahaan selama " + phs[i].elemen + " bulan adalah = " + String.format("%.2f",phs[i].totalBF(phs[i].keuntungan)));
+            System.out.println("Total keuntungan perusahaan selama " + phs[i].elemen + " bulan adalah = " 
+            + String.format("%.2f",phs[i].totalBF(phs[i].keuntungan)));
             System.out.println("Algoritma Divide Conquer");
-            System.out.println("Total keuntungan perusahaan selama " + phs[i].elemen + " bulan adalah = " + String.format("%.2f",phs[i].totalDC(phs[i].keuntungan, 0, phs[i].elemen - 1)));
+            System.out.println("Total keuntungan perusahaan selama " + phs[i].elemen + " bulan adalah = " 
+            + String.format("%.2f",phs[i].totalDC(phs[i].keuntungan, 0, phs[i].elemen - 1)));
             System.out.println("===============================================================");
         }
     }
